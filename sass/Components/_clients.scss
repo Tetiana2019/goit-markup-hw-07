@@ -1,0 +1,31 @@
+.clients-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .clients-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid red;
+  }
+  .clients-logo:hover,
+  .clients-logo:focus {
+    border: 1px solid blue;
+  }
+  .client-icon {
+    min-width: 88px;
+    width: 100%;
+    max-height: 52px;
+    --color2: brown;
+  }
+  .client-icon:hover,
+  .client-icon:focus {
+    --color2: blue;
+  }
+  .clients-logo:not(:last-child) {
+    margin-right: 30px;
+  }
