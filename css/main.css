@@ -1,1 +1,216 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section {
+  padding: 94px 0;
+}
+
+.submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 200px;
+  width: 100%;
+  min-height: 50px;
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.15));
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header {
+  border: 1px solid #ececec;
+  height: 80px;
+  top: 0;
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 100%;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-list {
+  margin-left: 90px;
+}
+
+.header-list,
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-contacts {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company-logo a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.header-list .header-link {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+
+/* SVG sprite для иконок хэдера */
+.email-icon {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.contact-email:hover .email-icon,
+.contact-email:focus .email-icon {
+  --color5: #2196f3;
+}
+
+.header-contacts .contacts-link:hover, .header-contacts .contacts-link:focus {
+  color: #2196f3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-icon {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.contact-phone:hover .phone-icon,
+.contact-phone:focus .phone-icon {
+  --color5: #2196f3;
+}
+
+.header-list .header-link:hover, .header-list .header-link:focus {
+  color: #2196f3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list .current {
+  color: #2196f3;
+}
+
+.header-link {
+  position: relative;
+  padding-bottom: 31px;
+}
+
+.current:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.header-contacts .contacts-link {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #757575;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
