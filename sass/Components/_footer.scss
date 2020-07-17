@@ -67,7 +67,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  input {
+  position: relative;
+  .footer-input {
     min-width: 360px;
     width: 100%;
     min-height: 50px;
@@ -76,6 +77,22 @@ footer {
     border-radius: 4px;
     padding-left: 16px;
     margin-right: 15px;
+    &:invalid,
+    &:focus {
+      background-color: $primary-bg-color;
+    }
+    &:focus + .footer-label,
+    &:not(:placeholder-shown) + .footer-label {
+      opacity: 0;
+    }
+  }
+  .footer-label {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    font-size: 16px;
+    line-height: 1;
+    color: $footer-label-color;
   }
 }
 .footer-submit {
