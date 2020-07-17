@@ -53,12 +53,32 @@
     border-color: $accent-color;
     outline: $accent-color;
   }
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    color: $accent-color;
+    transform: translate(-25px, -40px);
+    font-size: 12px;
+    line-height: 14px;
+    transition: transform 250ms $timing-function;
+  }
+  &:focus + .textarea-label,
+  &:not(:placeholder-shown) + .textarea-label {
+    transform: translate(-5px, -32px);
+  }
+  &:focus ~ .form-icon {
+    fill: $accent-color;
+  }
 }
 .form-label {
   position: absolute;
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
+}
+.modal-icon {
+  width: 11px;
+  height: 11px;
+  fill: $black-elements;
 }
 .modal-close {
   position: absolute;
@@ -74,11 +94,6 @@
   &:focus .modal-icon {
     fill: $accent-color;
   }
-}
-.modal-icon {
-  width: 11px;
-  height: 11px;
-  fill: $balack-elements;
 }
 .textarea-input {
   resize: none;
@@ -112,18 +127,6 @@
   max-width: 200px;
   width: 100%;
 }
-.modal-input:focus +.form-label,
-.modal-input:not(:placeholder-shown) + .form-label {
-  color: $accent-color;
-  transform: translate(-25px, -40px);
-  font-size: 12px;
-  line-height: 14px;
-  transition: transform 250ms $timing-function;
-}
-.modal-input:focus + .textarea-label,
-.modal-input:not(:placeholder-shown) + .textarea-label {
-  transform: translate(-5px, -32px);
-}
 .form-icon {
   position: absolute;
   display: inline-block;
@@ -133,13 +136,7 @@
   left: 16px;
   transform: translateY(-50%);
 }
-.modal-input:focus ~ .form-icon {
-  fill: $accent-color;
-}
 .policy-checkbox {
-  /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -148,6 +145,12 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  &:checked + .policy-icon {
+    background-color: $accent-color;
+    border: none;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+  }
 }
 .policy-icon {
   display: inline-block;
@@ -156,10 +159,4 @@
   border-radius: 2px;
   border: 2px solid $secondary-text-color;
   margin-right: 7px;
-}
-.policy-checkbox:checked + .policy-icon {
-  background-color: $accent-color;
-  border: none;
-  background-image: url(../images/check.svg);
-  background-size: contain;
 }
