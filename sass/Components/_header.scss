@@ -73,6 +73,17 @@
     transition-timing-function: $timing-function;
   }
 }
+.header-contacts {
+  .contacts-link {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
 .phone-icon {
   width: 10px;
   height: 15px;
@@ -115,15 +126,5 @@
     border: 1px solid transparent;
     border-radius: 2px;
     background-color: $accent-color;
-  }
-}
-.header-contacts {
-  .contacts-link {
-    font-size: 14px;
-    letter-spacing: 0px;
-    color: $primary-text-color;
-    font-family: "Roboto";
-    font-weight: 500;
-    text-decoration: none;
   }
 }

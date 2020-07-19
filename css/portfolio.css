@@ -162,6 +162,15 @@ section {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-contacts .contacts-link {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #757575;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .phone-icon {
   width: 10px;
   height: 15px;
@@ -203,15 +212,6 @@ section {
   border: 1px solid transparent;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.header-contacts .contacts-link {
-  font-size: 14px;
-  letter-spacing: 0px;
-  color: #757575;
-  font-family: "Roboto";
-  font-weight: 500;
-  text-decoration: none;
 }
 
 .portfolio-filters {
